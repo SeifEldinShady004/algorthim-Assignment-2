@@ -10,8 +10,8 @@ struct slNode {
     t key;
     vector<slNode<t>*> next;
 
-    slNode(t key) : key(key) {}
-    slNode() {}
+    slNode(t key = t()) : key(key) {}
+//    slNode() {}
 };
 
 template <typename t>
@@ -269,6 +269,9 @@ public:
 //    cout<<"\n";
 //    sl.print();
 //    cout<<"\n";
+//    sl.printSkipList();
+//    cout<<"\n";
+//
 //
 //    sl.remove(15);
 //
@@ -282,6 +285,8 @@ public:
 //
 //    cout<<"\n";
 //    sl.print();
+//    cout<<"\n";
+//    sl.printSkipList();
 //    cout<<"\n";
 //
 //    return 0;
@@ -300,7 +305,7 @@ int main() {
     lb.addPlayer(bob);
     lb.addPlayer(charlie);
     lb.addPlayer(dave);
-    
+
     lb.printDS();
     lb.print();
 
